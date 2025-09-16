@@ -1,0 +1,22 @@
+import java.util.ArrayList;
+
+public class AddressBook {
+    private ArrayList<BuddyInfo> addressbook;
+
+    public AddressBook(){
+        addressbook = new ArrayList<BuddyInfo>();
+    }
+
+    public boolean addBuddy(BuddyInfo friend) {
+        return addressbook.add(friend);
+    }
+
+    public boolean removeBuddy(BuddyInfo friend) {
+        return addressbook.remove(friend);
+    }
+
+    public static void main(String[] args){
+        System.out.println("Address Book");
+    }
+}
+
