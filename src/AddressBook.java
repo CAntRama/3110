@@ -15,6 +15,10 @@ public class AddressBook {
         return addressbook.remove(friend);
     }
 
+    public ArrayList<BuddyInfo> getBuddies() {
+        return addressbook;
+    }
+
     public static void main(String[] args){
         AddressBook addressBook = new AddressBook();
         BuddyInfo bob = new BuddyInfo("Bob","brostreet","67");
